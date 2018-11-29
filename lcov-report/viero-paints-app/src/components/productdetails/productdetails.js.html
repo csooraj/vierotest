@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for viero-paints-app/src/components/productdetails/productdetails.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">viero-paints-app/src/components/productdetails</a> productdetails.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">88.57% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>31/35</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>6/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">77.78% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>14/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">87.5% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>28/32</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">65x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">77x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">33x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * Product Details Component
+ * created @ 17/10/2018
+ * This files contains the code for the Product Details Component
+ */
+&nbsp;
+import React from 'react';
+import PropTypes from 'prop-types';
+import StarRating from 'react-native-star-rating';
+import HTMLView from 'react-native-htmlview';
+import {
+  SafeAreaView,
+  ScrollView,
+  TouchableOpacity,
+  Dimensions,
+  ActivityIndicator,
+  Image,
+  View,
+  Text,
+  FlatList,
+  TextInput,
+} from 'react-native';
+&nbsp;
+import NavHeader from '../navheader/navheader';
+import MaterialCard from './materialcard';
+import { MEDIA_URL } from '../../controller/apiconfig';
+import Styles from './styles';
+import DescriptionStyles from './descriptionstyles';
+import PropertyCard from './propertyview';
+import AttachmentView from './attachmentview';
+import RelatedProducts from '../relatedproducts/relatedproducts';
+&nbsp;
+const { height } = Dimensions.get('window');
+const Formats = ['1kg', '2kg', '3kg', '4kg', '5kg', '6kg', '7kg'];
+const Colors = ['#e57373', '#2196f3', '#ff5252', '#f9a825', '#795548', '#3949ab', '#7b1fa2', '#e57373', '#2196f3', '#ff5252', '#f9a825', '#795548', '#3949ab', '#7b1fa2'];
+const PropertyList = [{ name: 'TOOLS PRINCIPALI', value: 'Splater' }, { name: 'RESA E CONSUMO', value: '7.0- 8.0 m2/l' }, { name: 'CLASSE DE EMISSIONE', value: 'A+' }, { name: 'BASE', value: 'Base Calce' }];
+const Attachments = ['SCHEDA TECNICA', 'SCHEDA DI SICUREZZA', 'COLLEZIONE COLORE'];
+const materialImage = require('../../assets/material.png');
+const colorBucketImage = require('../../assets/color.png');
+&nbsp;
+export default class ProductDetails extends React.Component {
+&nbsp;
+  constructor() {
+    super();
+    this.state = {
+      quantity: '',
+      format: '1kg',
+      starRating: 5,
+      dataLoaded: true,
+      data: '',
+    };
+    this.showRelatedProductDetails = this.showRelatedProductDetails.bind(this);
+  }
+&nbsp;
+  componentWillMount() {
+    const { state } = this.props.navigation;
+    const data = state.params.data;
+    this.setState({ data: data });
+  }
+&nbsp;
+  setRating(rating) {
+    this.setState({ starRating: rating });
+  }
+&nbsp;
+&nbsp;
+  handleFormat(item) {
+    this.setState({ format: item });
+  }
+&nbsp;
+  showRelatedProductDetails(item) {
+    this.setState({ dataLoaded: false });
+    this.setState({ data: item });
+    setTimeout(() =&gt; this.hideLoader(), 200);
+  }
+&nbsp;
+  hideLoader() {
+    this.setState({ dataLoaded: true });
+  }
+&nbsp;
+  renderColors(item) {
+    return (
+      &lt;TouchableOpacity style={Styles.colorTile}&gt;
+        &lt;View style={[Styles.colorButton, { backgroundColor: item }]} /&gt;
+        &lt;Text style={Styles.colorLabel}&gt;{item}&lt;/Text&gt;
+      &lt;/TouchableOpacity&gt;
+    )
+  }
+&nbsp;
+  render() {
+    const data = this.state.data;
+    const imageIndex = data['custom_attributes'].findIndex(x =&gt; x.attribute_code === 'thumbnail');
+    const descriptionIndex = data['custom_attributes'].findIndex(x =&gt; x.attribute_code === 'description');
+    return (
+      &lt;SafeAreaView style={Styles.container}&gt;
+        &lt;NavHeader navigation={this.props.navigation} showBack /&gt;
+        {
+          this.state.dataLoaded
+          ?
+            &lt;ScrollView&gt;
+              &lt;View style={Styles.productImageView}&gt;
+                &lt;Image source={{ uri: MEDIA_URL + data.custom_attributes[imageIndex]['value'] }} style={Styles.productImage} /&gt;
+              &lt;/View&gt;
+              &lt;View
+                style={[Styles.productMetaDataView,
+                  {
+                    height:
+                     data.name.length &gt; 15
+                     ?
+                    ((0.20 + (data.name.length / 1000)) * height)
+                    :
+                    0.20 * height
+                  }]}
+              &gt;
+                &lt;View style={Styles.productTitleView}&gt;
+                  &lt;Text style={Styles.productName}&gt;
+                    {data.name}
+                  &lt;/Text&gt;
+                  &lt;Text style={Styles.productPrice}&gt;
+                    {'€ 49.50'}
+                  &lt;/Text&gt;
+                &lt;/View&gt;
+                &lt;View style={Styles.productRatingView}&gt;
+                  &lt;View style={Styles.starRatingView}&gt;
+                    &lt;StarRating
+                      disabled
+                      emptyStarColor="#5B7171"
+                      fullStarColor="#5B7171"
+                      starSize={15}
+                      maxStars={5}
+                      rating={4}
+                    /&gt;
+                  &lt;/View&gt;
+                  &lt;View style={Styles.buyButtonView}&gt;
+                    &lt;TouchableOpacity style={Styles.acquistaButton}&gt;
+                      &lt;Text style={Styles.acquistaLabel}&gt;
+                        ACQUISTA
+                      &lt;/Text&gt;
+                    &lt;/TouchableOpacity&gt;
+                  &lt;/View&gt;
+                &lt;/View&gt;
+              &lt;/View&gt;
+              &lt;View style={Styles.attributeView}&gt;
+                &lt;View style={Styles.numberView}&gt;
+                  &lt;View style={Styles.inputView}&gt;
+                    &lt;Text style={Styles.quantityLabel}&gt;
+                     Quantità
+                    &lt;/Text&gt;
+                    &lt;TextInput
+                      style={Styles.quantityInput}
+                      value={this.state.quantity}
+                      onChangeText={<span class="fstat-no" title="function not covered" >te</span>xt =&gt; <span class="cstat-no" title="statement not covered" >this.setState({ quantity: text })}</span>
+                      underlineColorAndroid="transparent"
+                      placeholder="01"
+                      placeholderTextColor="black"
+                    /&gt;
+                  &lt;/View&gt;
+                  &lt;View style={Styles.formatView}&gt;
+                    &lt;Text style={Styles.quantityLabel}&gt;
+                     Formato
+                    &lt;/Text&gt;
+                    &lt;View style={Styles.formatMenu}&gt;
+                      &lt;ScrollView horizontal&gt;
+                        {
+                         Formats.map(item =&gt;
+                           &lt;TouchableOpacity
+                             onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.handleFormat(item)}</span>
+                             style={
+                               this.state.format === item
+                               ?
+                               Styles.formatButtonActive
+                               :
+                               Styles.formatButton
+                             }
+                           &gt;
+                             &lt;Text style={Styles.formatLabel}&gt;{item}&lt;/Text&gt;
+                           &lt;/TouchableOpacity&gt;
+                         )
+                       }
+                      &lt;/ScrollView&gt;
+                    &lt;/View&gt;
+                  &lt;/View&gt;
+                &lt;/View&gt;
+              &lt;/View&gt;
+              &lt;View style={Styles.colorView}&gt;
+                &lt;Text style={Styles.selectColorTitle}&gt;
+                 Scegli il colore
+                &lt;/Text&gt;
+                &lt;FlatList
+                  data={Colors}
+                  numColumns={5}
+                  contentContainerStyle={Styles.colorList}
+                  renderItem={<span class="fstat-no" title="function not covered" >({</span> item }) =&gt; <span class="cstat-no" title="statement not covered" >this.renderColors(item)}</span>
+                /&gt;
+              &lt;/View&gt;
+              &lt;View style={Styles.materialView}&gt;
+                &lt;MaterialCard
+                  image={materialImage}
+                  title="Interni"
+                  showBorder
+                /&gt;
+                &lt;MaterialCard
+                  image={colorBucketImage}
+                  title="Sandy Metallic"
+                /&gt;
+              &lt;/View&gt;
+              &lt;View style={Styles.descriptionView}&gt;
+                &lt;HTMLView
+                  value={data.custom_attributes[descriptionIndex].value}
+                  stylesheet={DescriptionStyles}
+                /&gt;
+              &lt;/View&gt;
+              &lt;View style={Styles.propertyList}&gt;
+                {
+                 PropertyList.map((item, index) =&gt;
+                   &lt;PropertyCard
+                     index={index}
+                     title={item.name}
+                     value={item.value}
+                   /&gt;,
+                 )
+               }
+              &lt;/View&gt;
+              &lt;View style={Styles.attachmentList}&gt;
+                {
+                 Attachments.map(item =&gt;
+                   &lt;AttachmentView
+                     title={item}
+                   /&gt;,
+                 )
+                }
+              &lt;/View&gt;
+              &lt;View style={Styles.ratingButtonView}&gt;
+                &lt;Text style={Styles.ratingLabel}&gt;
+                  Dai una valutazione a questo prodotto
+                &lt;/Text&gt;
+                &lt;View style={Styles.ratingButton}&gt;
+                  &lt;StarRating
+                    disabled={false}
+                    emptyStarColor="#5B7171"
+                    fullStarColor="#5B7171"
+                    starSize={26}
+                    maxStars={5}
+                    rating={this.state.starRating}
+                    animation="bounce"
+                    selectedStar={<span class="fstat-no" title="function not covered" >ra</span>ting =&gt; <span class="cstat-no" title="statement not covered" >this.setRating(rating)}</span>
+                  /&gt;
+                &lt;/View&gt;
+              &lt;/View&gt;
+              &lt;View style={Styles.relatedProductsView}&gt;
+                &lt;RelatedProducts
+                  showProductDetails={this.showRelatedProductDetails}
+                /&gt;
+              &lt;/View&gt;
+            &lt;/ScrollView&gt;
+          :
+            &lt;View style={Styles.loaderView}&gt;
+              &lt;ActivityIndicator size="large" color="#4D4C4C" /&gt;
+            &lt;/View&gt;
+        }
+      &lt;/SafeAreaView&gt;
+    );
+  }
+}
+&nbsp;
+ProductDetails.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func.isRequired,
+    state: PropTypes.func.isRequired,
+    goBack: PropTypes.func.isRequired,
+  }).isRequired,
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Nov 29 2018 12:12:54 GMT+0530 (India Standard Time)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

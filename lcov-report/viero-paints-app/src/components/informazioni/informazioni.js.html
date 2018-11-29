@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for viero-paints-app/src/components/informazioni/informazioni.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">viero-paints-app/src/components/informazioni</a> informazioni.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>11/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>7/7</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>10/10</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * Informazioni View
+ * created @ 17/10/2018
+ * This files contains the code for the Informazioni View
+ */
+&nbsp;
+import React from 'react';
+import PropTypes from 'prop-types';
+import HTMLView from 'react-native-htmlview';
+import {
+  SafeAreaView,
+  ScrollView,
+  Dimensions,
+  View,
+  Text,
+  Image,
+} from 'react-native';
+&nbsp;
+import NavHeader from '../navheader/navheader';
+import { INFO_URL } from '../../controller/apiconfig';
+import { apiCallHandler, getToken } from '../../controller/apicontroller';
+import Styles from './styles';
+&nbsp;
+const infoImage = require('../../assets/info.png');
+&nbsp;
+const { height } = Dimensions.get('window');
+&nbsp;
+export default class Informazioni extends React.Component {
+&nbsp;
+  constructor() {
+    super();
+    this.state = {
+      content: '',
+      dataLoaded: false,
+    };
+  }
+&nbsp;
+  componentDidMount() {
+    getToken().then(token =&gt; this.loadPageContent(token));
+  }
+&nbsp;
+  loadPageContent(token) {
+    apiCallHandler('GET', INFO_URL, token, '', 'application/json').then(
+      data =&gt; this.processContent(data),
+    );
+  }
+&nbsp;
+  processContent(data) {
+    this.setState({ content: data, dataLoaded: true });
+  }
+&nbsp;
+  render() {
+    return (
+      &lt;SafeAreaView style={Styles.container}&gt;
+        &lt;NavHeader navigation={this.props.navigation} showBack /&gt;
+        &lt;ScrollView contentContainerStyle={Styles.scrollView}&gt;
+          &lt;View style={Styles.imageView}&gt;
+            &lt;Image source={infoImage} style={Styles.infoImage} /&gt;
+          &lt;/View&gt;
+          &lt;Text style={Styles.infoTitle}&gt;
+            Informazioni Utili
+          &lt;/Text&gt;
+          &lt;View style={Styles.contentView}&gt;
+            &lt;View style={Styles.headerView}&gt;
+              &lt;Text style={Styles.headerLabel}&gt;
+                CONSEGNA ESPRESSA
+              &lt;/Text&gt;
+            &lt;/View&gt;
+            &lt;View style={Styles.descriptionView}&gt;
+              &lt;Text style={Styles.description}&gt;
+                {
+                  "Viero offre un servizio di consegna espressa. Il pacco verrà consegnato tramite corriere DHL entro 1-2 giorni dalla spedizione (dipende dal tuo CAP). Il prezzo della spedizione è € 7,95. \n\n\n La data precisa di consegna e il costo ti verranno mostrati durante la fase di conferma dell'ordine. Se la zona in cui abiti non è servita dalla consegna espressa, questa modalità non ti verrà proposta al momento della conclusione dell'ordine. \n\n\n Gli articoli partner sono esclusi dall'offerta. \n\n\n La consegna espressa avviene dal lunedì al venerdì, esclusi i giorni festivi. \n\n\n Se l'articolo desiderato è disponibile e l'ordine viene effettuato entro le 13:00 la consegna avverrà entro il giorno lavorativo successivo. Se scegli la consegna espressa potrai pagare solo con carta di credito o PayPal. Come per la consegna standard, è possibile visualizzare in ogni momento lo stato della spedizione espressa dal conto cliente. "
+                }
+              &lt;/Text&gt;
+            &lt;/View&gt;
+            &lt;View style={[Styles.headerView, { marginTop: 0.11 * height }]}&gt;
+              &lt;Text style={Styles.headerLabel}&gt;
+                TEMPI DI SPEDIZIONE
+              &lt;/Text&gt;
+            &lt;/View&gt;
+            &lt;View style={Styles.descriptionView}&gt;
+              &lt;Text style={Styles.description}&gt;
+                {
+                  "Viero offre un servizio di consegna espressa. Il pacco verrà consegnato tramite corriere DHL entro 1-2 giorni dalla spedizione (dipende dal tuo CAP). Il prezzo della spedizione è € 7,95. \n\n\n La data precisa di consegna e il costo ti verranno mostrati durante la fase di conferma dell'ordine. Se la zona in cui abiti non è servita dalla consegna espressa, questa modalità non ti verrà proposta al momento della conclusione dell'ordine. \n\n\n Gli articoli partner sono esclusi dall'offerta. \n\n\n La consegna espressa avviene dal lunedì al venerdì, esclusi i giorni festivi. \n\n\n Se l'articolo desiderato è disponibile e l'ordine viene effettuato entro le 13:00 la consegna avverrà entro il giorno lavorativo successivo. Se scegli la consegna espressa potrai pagare solo con carta di credito o PayPal. Come per la consegna standard, è possibile visualizzare in ogni momento lo stato della spedizione espressa dal conto cliente. "
+                }
+              &lt;/Text&gt;
+            &lt;/View&gt;
+          &lt;/View&gt;
+        &lt;/ScrollView&gt;
+      &lt;/SafeAreaView&gt;
+    );
+  }
+}
+&nbsp;
+Informazioni.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func.isRequired,
+    state: PropTypes.func.isRequired,
+    goBack: PropTypes.func.isRequired,
+  }).isRequired,
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Nov 29 2018 12:12:54 GMT+0530 (India Standard Time)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

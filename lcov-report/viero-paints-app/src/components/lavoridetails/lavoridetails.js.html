@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for viero-paints-app/src/components/lavoridetails/lavoridetails.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">viero-paints-app/src/components/lavoridetails</a> lavoridetails.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>15/15</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>5/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>15/15</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * Lavori Details Component
+ * created @ 17/10/2018
+ * This files contains the code for the Lavori Details Component
+ */
+&nbsp;
+import React from 'react';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import PropTypes from 'prop-types';
+import Swiper from 'react-native-swiper';
+import {
+  SafeAreaView,
+  View,
+  TextInput,
+  Image,
+  TouchableOpacity,
+  ActivityIndicator,
+  ImageBackground,
+  ScrollView,
+  FlatList,
+  Text,
+} from 'react-native';
+import NavHeader from '../navheader/navheader';
+import DemoProducts from './demolavori';
+import Styles from './styles';
+&nbsp;
+const filterLogo = require('../../assets/filter.png');
+const authorLogo = require('../../assets/author.png');
+const viewIcon = require('../../assets/eye.png');
+&nbsp;
+const Images = [require('../../assets/lavori1.png'), require('../../assets/lavori2.png'), require('../../assets/lavori3.png'), require('../../assets/lavori4.png')]
+&nbsp;
+&nbsp;
+export default class LavoriDetails extends React.Component {
+&nbsp;
+  constructor() {
+    super();
+    this.state = {
+      dataLoaded: true,
+      title: 'Tutti i lavori',
+    };
+  }
+&nbsp;
+  renderProductCard(item) {
+    const { state } = this.props.navigation;
+    const data = state.params.data;
+    return (
+      &lt;TouchableOpacity style={Styles.productCard}&gt;
+        &lt;View style={Styles.productImageContainer}&gt;
+          &lt;ImageBackground resizeMode="stretch" source={item.image} style={Styles.productCardImage}&gt;
+            &lt;View style={Styles.overlayView}&gt;
+              &lt;View style={Styles.authorView}&gt;
+                &lt;View style={Styles.authorImageView}&gt;
+                  &lt;Image source={authorLogo} style={Styles.authorImage} /&gt;
+                &lt;/View&gt;
+                &lt;View style={Styles.authorDetailsView}&gt;
+                  &lt;Text style={Styles.authorLabel}&gt;
+                    {data.name}
+                  &lt;/Text&gt;
+                  &lt;Text style={Styles.descriptionLabel}&gt;
+                    {data.author + ' / ' + data.place}
+                  &lt;/Text&gt;
+                &lt;/View&gt;
+                &lt;View style={Styles.iconView}&gt;
+                  &lt;Image source={viewIcon} style={Styles.icon} /&gt;
+                &lt;/View&gt;
+              &lt;/View&gt;
+            &lt;/View&gt;
+          &lt;/ImageBackground&gt;
+        &lt;/View&gt;
+      &lt;/TouchableOpacity&gt;
+    )
+  }
+&nbsp;
+&nbsp;
+  render() {
+    const { state } = this.props.navigation;
+    const data = state.params.data;
+    return (
+      &lt;SafeAreaView testID={'LavoriDetails'} style={Styles.container}&gt;
+        &lt;NavHeader navigation={this.props.navigation} showBack /&gt;
+        &lt;ScrollView&gt;
+          &lt;View style={Styles.carouselView}&gt;
+            &lt;Swiper
+              autoplay
+              loop
+              dotStyle={Styles.dotStyle}
+              dot={&lt;View style={Styles.dot} /&gt;}
+              activeDot={&lt;View style={Styles.activeDot} /&gt;}
+              style={Styles.wrapper}
+              showsButtons={false}
+              paginationStyle={Styles.pagination}
+            &gt;
+              {
+               Images.map(item =&gt; &lt;Image source={item} style={Styles.productImage} /&gt;)
+              }
+            &lt;/Swiper&gt;
+            &lt;View style={Styles.titleView}&gt;
+              &lt;Text style={Styles.name}&gt;
+                {data.name}
+              &lt;/Text&gt;
+            &lt;/View&gt;
+          &lt;/View&gt;
+          &lt;View style={Styles.propertyView}&gt;
+            &lt;View style={[Styles.propertyCard, { borderBottomWidth: 1 }]}&gt;
+              &lt;View style={Styles.labelView}&gt;
+                &lt;Text style={Styles.label}&gt;
+                  Applicatore:
+                &lt;/Text&gt;
+              &lt;/View&gt;
+              &lt;View style={Styles.valueView}&gt;
+                &lt;Text style={Styles.value}&gt;
+                  {data.author}
+                &lt;/Text&gt;
+              &lt;/View&gt;
+            &lt;/View&gt;
+          &lt;/View&gt;
+          &lt;View style={Styles.propertyView}&gt;
+            &lt;View style={[Styles.propertyCard, { borderBottomWidth: 1 }]}&gt;
+              &lt;View style={Styles.labelView}&gt;
+                &lt;Text style={Styles.label}&gt;
+                  Zone:
+                &lt;/Text&gt;
+              &lt;/View&gt;
+              &lt;View style={Styles.valueView}&gt;
+                &lt;Text style={Styles.value}&gt;
+                  {data.place}
+                &lt;/Text&gt;
+              &lt;/View&gt;
+            &lt;/View&gt;
+          &lt;/View&gt;
+          &lt;View style={Styles.propertyView}&gt;
+            &lt;View style={Styles.propertyCard}&gt;
+              &lt;View style={Styles.labelView}&gt;
+                &lt;Text style={Styles.label}&gt;
+                  Prodotti:
+                &lt;/Text&gt;
+              &lt;/View&gt;
+              &lt;View style={Styles.valueView}&gt;
+                &lt;Text style={[Styles.value, { textDecorationLine: 'underline', textDecorationColor: '#5F7070', textDecorationStyle: 'solid' }]}&gt;
+                  Allure
+                &lt;/Text&gt;
+              &lt;/View&gt;
+            &lt;/View&gt;
+          &lt;/View&gt;
+          &lt;View style={Styles.descriptionView}&gt;
+            &lt;Text style={Styles.description}&gt;
+              L’effetto decorativo Marmorin è stato scelto per decorare il muro lungo la piscina,
+              la palestra e l’area lounge di una villa privata nel Regno Unito.
+            &lt;/Text&gt;
+          &lt;/View&gt;
+          &lt;View style={Styles.productList}&gt;
+            &lt;Text style={Styles.productListTitle}&gt;
+              {'ALTRI LAVORI DI ' + data.author.toUpperCase() + ':'}
+            &lt;/Text&gt;
+            {
+              DemoProducts.map(item =&gt; this.renderProductCard(item))
+            }
+          &lt;/View&gt;
+          &lt;View style={Styles.buttonView}&gt;
+            &lt;TouchableOpacity style={Styles.button}&gt;
+              &lt;Text style={Styles.buttonLabel}&gt;
+                Visualizza tutti i progetti
+              &lt;/Text&gt;
+            &lt;/TouchableOpacity&gt;
+          &lt;/View&gt;
+        &lt;/ScrollView&gt;
+      &lt;/SafeAreaView&gt;
+    );
+  }
+}
+&nbsp;
+LavoriDetails.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func.isRequired,
+    goBack: PropTypes.func.isRequired,
+  }).isRequired,
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Nov 29 2018 12:12:54 GMT+0530 (India Standard Time)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for viero-paints-app/src/components/vetrinalavori/vetrinalavori.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">viero-paints-app/src/components/vetrinalavori</a> vetrinalavori.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">84.62% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>33/39</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>14/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">62.5% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>10/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">84.62% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>33/39</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">29x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">27x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">30x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * Product List Component
+ * created @ 17/10/2018
+ * This files contains the code for the Product Component
+ */
+&nbsp;
+import React from 'react';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import PropTypes from 'prop-types';
+import {
+  SafeAreaView,
+  View,
+  TextInput,
+  Image,
+  TouchableOpacity,
+  ActivityIndicator,
+  ImageBackground,
+  ScrollView,
+  FlatList,
+  Text,
+} from 'react-native';
+import NavHeader from '../navheader/navheader';
+import LavoriFilter from '../lavorifilter/lavorifilter';
+import Styles from './styles';
+import DemoProducts from './demolavori';
+&nbsp;
+const filterLogo = require('../../assets/filter.png');
+const tagIcon = require('../../assets/tag.png');
+const filterLabels = [{ Topology: ['Tutti i prodotti', 'Prymer &amp; Fondi', 'Finiture', 'Additivi Decorativi', 'Protezioni'] }, { Effecti: ['Tutti Effect', 'Metallica', 'Wood', 'Plain', 'Material'] }];
+&nbsp;
+export default class VetrinaLavori extends React.Component {
+&nbsp;
+  constructor() {
+    super();
+    this.state = {
+      productList: DemoProducts,
+      filteredFullData: DemoProducts,
+      dataLoaded: true,
+      title: 'Tutti i lavori',
+      showFilter: false,
+    };
+    this.filterItems = this.filterItems.bind(this);
+  }
+&nbsp;
+  showDetails(item) {
+    this.props.navigation.navigate('LavoriDetails', { data: item });
+  }
+&nbsp;
+  searchItems(keyword) {
+    this.setState({ searchTerm: keyword });
+    const data = this.state.productList;
+    const filteredList = data.filter((item) =&gt; {
+      const matchIndex = item.name.toLowerCase().search(keyword.toLowerCase());
+      if (matchIndex !== -1) {
+        return item;
+      }
+    });
+    if (filteredList.length &gt; 0) {
+      this.setState({ productList: filteredList });
+    } else {
+      this.setState({ productList: data });
+    }
+    if (keyword === '') {
+      if (this.state.filterActive) {
+        const fullFilteredData = this.state.filteredFullData;
+        this.setState({ productList: fullFilteredData });
+      } else {
+        this.setState({ productList: DemoProducts });
+      }
+    }
+  }
+&nbsp;
+  renderProductCard(item) {
+    return (
+      &lt;TouchableOpacity
+        onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.showDetails(item)}</span>
+        style={Styles.productCard}
+      &gt;
+        &lt;View style={Styles.productImageContainer}&gt;
+          &lt;ImageBackground resizeMode="stretch" source={item.image} style={Styles.productImage}&gt;
+            &lt;View style={Styles.overlayView}&gt;
+              &lt;View style={Styles.paddedView} /&gt;
+              &lt;View style={Styles.tagView}&gt;
+                &lt;View style={Styles.tagIconContainer}&gt;
+                  &lt;Image source={tagIcon} style={Styles.tagIcon} /&gt;
+                &lt;/View&gt;
+                &lt;View style={Styles.tagContainer}&gt;
+                  &lt;Text style={Styles.tagLabel}&gt;
+                    {item.tag}
+                  &lt;/Text&gt;
+                &lt;/View&gt;
+              &lt;/View&gt;
+            &lt;/View&gt;
+          &lt;/ImageBackground&gt;
+        &lt;/View&gt;
+        &lt;View style={Styles.productTitleView}&gt;
+          &lt;Text style={Styles.productTitle}&gt;{item.name} &lt;/Text&gt;
+          &lt;Text style={Styles.productDescription}&gt;{item.author + ' / ' + item.place}&lt;/Text&gt;
+        &lt;/View&gt;
+      &lt;/TouchableOpacity&gt;
+    )
+  }
+&nbsp;
+  showFilter() {
+    if (this.state.showFilter) {
+      this.setState({ showFilter: false });
+    } else {
+      this.setState({ showFilter: true });
+    }
+  }
+&nbsp;
+  displayFilter() {
+    if (this.state.showFilter) {
+      return (
+        &lt;LavoriFilter
+          filterData={filterLabels}
+          filterItems={this.filterItems}
+          title={this.state.title}
+        /&gt;
+      )
+    } else {
+      return (null);
+    }
+  }
+&nbsp;
+  filterItems(item) {
+    const title = item;
+    this.setState({ title: title, showFilter: false });
+  }
+&nbsp;
+  addNewItem() {
+    this.props.navigation.navigate('PublishLavori');
+  }
+&nbsp;
+&nbsp;
+  render() {
+    return (
+      &lt;SafeAreaView testID={'Lavori'} style={Styles.container}&gt;
+        &lt;NavHeader navigation={this.props.navigation} showBack /&gt;
+        {
+          this.state.dataLoaded
+          ?
+            &lt;ScrollView&gt;
+              &lt;View style={Styles.searchBar}&gt;
+                &lt;View style={Styles.inputWithIconContainer}&gt;
+                  &lt;Icon name="search" size={20} color="#797777" /&gt;
+                  &lt;TextInput
+                    style={Styles.searchInput}
+                    value={this.state.searchTerm}
+                    onChange={<span class="fstat-no" title="function not covered" >e </span>=&gt; <span class="cstat-no" title="statement not covered" >this.searchItems(e.nativeEvent.text)}</span>
+                    onChangeText={<span class="fstat-no" title="function not covered" >te</span>xt =&gt; <span class="cstat-no" title="statement not covered" >this.setState({ searchTerm: text })}</span>
+                    underlineColorAndroid="transparent"
+                    placeholder="Cerca tra i lavori"
+                    placeholderTextColor="#797777"
+                    returnKeyType="search"
+                  /&gt;
+                &lt;/View&gt;
+                &lt;TouchableOpacity
+                  onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.showFilter()}</span>
+                  style={Styles.filterIconContainer}
+                &gt;
+                  &lt;Image source={filterLogo} style={Styles.filterLogo} /&gt;
+                &lt;/TouchableOpacity&gt;
+              &lt;/View&gt;
+              {this.displayFilter()}
+              &lt;View style={Styles.titleContianer}&gt;
+                &lt;Text style={Styles.title}&gt;
+                  {this.state.title}
+                &lt;/Text&gt;
+                &lt;Text style={Styles.count}&gt;{'(' + this.state.productList.length + ')'}&lt;/Text&gt;
+              &lt;/View&gt;
+              &lt;FlatList
+                extraData={this.state}
+                removeClippedSubviews
+                data={this.state.productList}
+                renderItem={<span class="fstat-no" title="function not covered" >({</span> item }) =&gt; <span class="cstat-no" title="statement not covered" >this.renderProductCard(item)}</span>
+              /&gt;
+              &lt;View style={Styles.buttonView}&gt;
+                &lt;TouchableOpacity onPress={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.addNewItem()}</span> style={Styles.button}&gt;
+                  &lt;Text style={Styles.buttonLabel}&gt;
+                    Carica più elementi
+                  &lt;/Text&gt;
+                &lt;/TouchableOpacity&gt;
+              &lt;/View&gt;
+            &lt;/ScrollView&gt;
+          :
+            &lt;View style={Styles.loaderView}&gt;
+              &lt;ActivityIndicator size="large" color="#5F7070" /&gt;
+            &lt;/View&gt;
+      }
+      &lt;/SafeAreaView&gt;
+    );
+  }
+}
+&nbsp;
+VetrinaLavori.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func.isRequired,
+    goBack: PropTypes.func.isRequired,
+  }).isRequired,
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Nov 29 2018 12:12:54 GMT+0530 (India Standard Time)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>
